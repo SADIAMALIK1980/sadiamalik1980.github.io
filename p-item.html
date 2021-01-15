@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadia Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fsmlogo.png"
+          alt=""
+        />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="intro animate-pop-in">
+      <h1 class="section__title section__title--intro">
+        3 Letter <strong>Anagram App</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        <a class="section__subtitle small-link strong" href="https://sm-numerology.herokuapp.com" target="_blank"
+          >sm-numerology.herokuapp.com</a
+        >
+      </p>
+      <img
+        src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fanagram.jpg?v=1610437606458"
+        alt="Anagram app"
+        class="intro__img"
+      />
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p>
+        An app that takes a word (string) from the user input on the form and
+        reverses the letters and returns an array of strings. A user can add
+        word to the database, if they do not find their word in the app.
+      </p>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img
+            src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fhome.jpg?v=1610439352401"
+            style="width:100%"
+          />
+          <div class="text">User inputs the word into the form</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <img
+            src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fword-camp.jpg?v=1610439356911"
+            style="width:100%"
+          />
+          <div class="text">Showing anagrams</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+      <p>
+        Technologies used are HTML and CSS for the front-end. For manipulating
+        the data and storing - Ruby on Rails and MySQL. The app has been
+        deployed on Heroku.
+      </p>
+      <p>
+        *the app might not function properly because I have not updated my
+        Heroku App settings since they updated their sytem.
+      </p>
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <!-- replace with your own email address -->
+      <a href="mailto:sm.freelancing@gmail.com" class="footer__link"
+        >sm.freelancing@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://codepen.io/sadiamalik1980" target="_blank">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="http://instagram.com/smal80_codes" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="http://linkedin.com/in/smalk" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/sadiamalik1980" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>

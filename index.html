@@ -1,20 +1,259 @@
-<html><style type="text/css">
-html
- {
- width: 100%;
- height: 100%;
- }
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadia Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
 
-body
- {
-  display: flex;
-  justify-content: center;
-  align-items: center;
- }
-</style><center>
-<body>
-  <h1>Sadia Malik</h1>
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
 
-  <a href="https://github.com/SADIAMALIK1980/ruby.git" target="_blank">My Ruby Challenges</a>
-</center>
-</body></html>
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fsmlogo.png"
+          alt=""
+        />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <!-- Introduction -->
+    <section class="intro animate-pop-in" id="home">
+      <h1 class="section__title section__title--intro">
+        Hi, I am <strong>Sadia Malik</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">full-stack dev</p>
+      <img
+        src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fsunset%20(2).jpg?v=1610381506826"
+        alt="a picture of sunset over bridge"
+        class="intro__img"
+      />
+    </section>
+
+    <!-- My services -->
+    <section class="my-services" id="services">
+      <h2 class="section__title section__title--services">What I do</h2>
+      <div class="services">
+        <div class="service">
+          <i class="fas fa-pencil-ruler fa-3x"></i>
+          <h3>Design</h3>
+          <p>
+            Adobe Photoshop and Canva
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <i class="fas fa-code fa-3x"></i>
+          <h3>Programming Languages</h3>
+          <p>
+            HTML, CSS, PHP, JQuery, JavaScript, and Ruby on Rails
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <i class="fas fa-database fa-3x"></i>
+          <h3>Database</h3>
+          <p>
+            MySQL
+          </p>
+        </div>
+        <!-- / service -->
+
+        <div class="service">
+          <i class="fas fa-poll fa-3x"></i>
+          <h3>Marketing</h3>
+          <p>
+            Branding, SEO, and Social Media Management
+          </p>
+        </div>
+        <!-- / service -->
+      </div>
+      <!-- / services -->
+
+      <a href="#work" class="btn">My Work</a>
+    </section>
+
+    <!-- About me -->
+    <section class="about-me" id="about">
+      <h2 class="section__title section__title--about">Who I am</h2>
+      <p class="section__subtitle section__subtitle--about">
+        Designer & developer based out of Canada
+      </p>
+
+      <div class="about-me__body">
+        <p>
+          Full Stack Developer from Ontario, Canada. Focused on writing clean,
+          elegant and efficient code. Passionate about all things web from
+          back-end code to content management systems to UI effects. Paying
+          attention to user needs and listening to the voice of the customer. I
+          also have skills in other fields like blogs, SEO and marketing.
+        </p>
+        <p>
+          Passionate learner, who loves to learn new skills in web development,
+          currently updating my front end skills, such as responsive design,
+          cross-browser, Javascript etc. When I'm not learning or coding, you'll
+          find me cooking, playing badminton with my kids or taking pictures of
+          sunsets while walking.
+        </p>
+      </div>
+
+      <img
+        src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2FDSC_0124.jpg?v=1610436787294"
+        alt="Detroit river at sunset"
+        class="about-me__img"
+      />
+    </section>
+
+    <!-- My Work -->
+    <section class="my-work" id="work">
+      <h2 class="section__title section__title--work">My work</h2>
+      <p class="section__subtitle section__subtitle--work">
+        A selection of my work. All the websites created are responsive design.
+      </p>
+
+      <div class="portfolio">
+        <!-- Portfolio item 01 -->
+        <a href="p-item.html" class="portfolio__item">
+          <img
+            src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fanagram.jpg?v=1610425501584"
+            alt="finding anagrams for three letter words"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 02 -->
+        <a href="p-item2.html" class="portfolio__item">
+          <img
+            src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Femoji-slider.jpg?v=1610425294523"
+            alt="ratings with emojis two ways"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 03 -->
+        <a href="p-item3.html" class="portfolio__item">
+          <img
+            src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fsocialmedia-habits-survey.jpg?v=1610426279770"
+            alt="survey form for social media habits"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 04 -->
+        <a href="p-item4.html" class="portfolio__item">
+          <img
+            src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fproduct-landingpage.jpg?v=1610435561890"
+            alt="product landing page"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 05 -->
+        <a href="p-item5.html" class="portfolio__item">
+          <img
+            src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fphotography-portfolio.png?v=1610435893458"
+            alt="photography ecommerce website"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 06 -->
+        <a href="p-item6.html" class="portfolio__item">
+          <img
+            src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2FLimitless%20Allergies%20logo%20orange%20small.jpg?v=1610436052747"
+            alt="limitless allergies logo"
+            class="portfolio__img"
+          />
+        </a>
+
+        <!-- Portfolio item 07 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-07.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 08 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-08.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 09 -->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-09.jpg" alt="" class="portfolio__img" />
+        </a>
+
+        <!-- Portfolio item 0 0-->
+        <a href="#" class="portfolio__item">
+          <img src="img/portfolio-10.jpg" alt="" class="portfolio__img" />
+        </a>
+      </div>
+    </section>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <!-- replace with your own email address -->
+      <a href="mailto:sm.freelancing@gmail.com" class="footer__link"
+        >sm.freelancing@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://codepen.io/sadiamalik1980" target="_blank">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="http://instagram.com/smal80_codes" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="http://linkedin.com/in/smalk" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/sadiamalik1980" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="/script.js"></script>
+  </body>
+</html>

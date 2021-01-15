@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sadia Portfolio Website</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"
+      integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc="
+      crossorigin="anonymous"
+    />
+
+    <!-- Update these with your own fonts -->
+    <link
+      href="https://fonts.googleapis.com/css?family=Source+Code+Pro:400,900|Source+Sans+Pro:300,900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="/style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">
+        <img
+          src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fsmlogo.png"
+          alt=""
+        />
+      </div>
+      <button class="nav-toggle" aria-label="toggle navigation">
+        <span class="hamburger"></span>
+      </button>
+      <nav class="nav">
+        <ul class="nav__list">
+          <li class="nav__item"><a href="#home" class="nav__link">Home</a></li>
+          <li class="nav__item">
+            <a href="#services" class="nav__link">My Services</a>
+          </li>
+          <li class="nav__item">
+            <a href="#about" class="nav__link">About me</a>
+          </li>
+          <li class="nav__item">
+            <a href="#work" class="nav__link">My Work</a>
+          </li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="intro animate-pop-in">
+      <h1 class="section__title section__title--intro">
+        Product <strong>Landing Page...</strong>
+      </h1>
+      <p class="section__subtitle section__subtitle--intro">
+        <a class="section__subtitle small-link" href="https://codepen.io/sadiamalik1980/full/vaXVEa" target="_blank"
+          >https://codepen.io/sadiamalik1980/full/vaXVEa</a
+        >
+      </p>
+      <img
+        src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fproduct-landingpage.jpg?v=1610435561890"
+        alt="Product landing page"
+        class="intro__img"
+      />
+    </section>
+
+    <div class="portfolio-item-individual">
+      <p>
+         A front end project creating a landing page for a product using plain HTML and CSS. 
+      </p>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+        <!-- Full-width images with number and caption text -->
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 2</div>
+          <img
+            src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fproduct-landing.png?v=1610522088141"
+            style="width:100%"
+          />
+          <div class="text">Hero Header</div>
+        </div>
+
+        <div class="mySlides fade">
+          <div class="numbertext">2 / 2</div>
+          <img
+            src="https://cdn.glitch.com/4f1494bd-010a-4169-a104-1db083671c26%2Fproduct-landing2.png?v=1610522089454"
+            style="width:100%"
+          />
+          <div class="text">Comparison table</div>
+        </div>
+
+        <!-- Next and previous buttons -->
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+      </div>
+      <br />
+
+      <!-- The dots/circles -->
+      <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+      </div>
+      <p>
+        The navbar always stays at the top of the viewport.
+      </p>
+      
+    </div>
+
+    <!-- Footer -->
+
+    <footer class="footer">
+      <!-- replace with your own email address -->
+      <a href="mailto:sm.freelancing@gmail.com" class="footer__link"
+        >sm.freelancing@gmail.com</a
+      >
+      <ul class="social-list">
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://codepen.io/sadiamalik1980" target="_blank">
+            <i class="fab fa-codepen"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="http://instagram.com/smal80_codes" target="_blank">
+            <i class="fab fa-instagram"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="http://linkedin.com/in/smalk" target="_blank">
+            <i class="fab fa-linkedin"></i>
+          </a>
+        </li>
+        <li class="social-list__item">
+          <a class="social-list__link" href="https://github.com/sadiamalik1980" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+        </li>
+      </ul>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
