@@ -459,9 +459,7 @@ header {
 }
 
 @media (min-width: 600px) {
-    .my-work {
-        display: grid; 
-    }
+
     
     
     .my-work__img {
