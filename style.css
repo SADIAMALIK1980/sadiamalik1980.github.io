@@ -458,6 +458,21 @@ header {
     opacity: .5;
 }
 
+@media (min-width: 600px) {
+    .my-work {
+        display: grid;
+        grid-template-columns: 1fr 200px;
+    }
+    
+    
+    .my-work__img {
+        grid-area: img;
+        position: relative;
+        z-index: 2;
+    }
+}
+
+
 /* footer */
 
 .footer {
